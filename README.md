@@ -21,3 +21,8 @@ pip install -r requirements.txt
 Si agregas una liberia nueva actualizar archivo requirements:
 pip freeze > requirements.txt
 
+Ir a mysql, conectarse al server local, y correr el script para crear la base de datos, luego cargarla con datos.
+
+Para ejecutar proyecto en pycharm:
+Ir a file - settings - project interpreter y seleccionar existing environment, en la opcion de interpreter buscar el ejecutable python del entorno virtual creado en el directorio del proyecto.
+
