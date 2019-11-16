@@ -10,7 +10,15 @@ ResultProxy = connection.execute(query)
 ResultSet = ResultProxy.fetchall()
 print(ResultSet)
 
-query = db.select([persona]).where(persona.columns.nombre == 'gianluca')
+query = db.select([persona]).where(persona.columns.nombre == 'Nahuel')
+ResultProxy = connection.execute(query)
+ResultSet = ResultProxy.fetchall()
+print(ResultSet)
+
+query = db.insert(persona).values(nombre='Juan Román', apellido='Riquelme')
+ResultProxy = connection.execute(query)
+
+query = db.select([persona])
 ResultProxy = connection.execute(query)
 ResultSet = ResultProxy.fetchall()
 print(ResultSet)
